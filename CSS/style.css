@@ -12,6 +12,38 @@ html {
     font-size: 16px;
 }
 
+/*  preloader animation styles */
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: #E8E8EA;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .preloader img {
+    animation: spin 2.5s ease;
+    width: 150px;
+    transition: all;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
 /*  home page header hero section styles */
 
 .hero {
