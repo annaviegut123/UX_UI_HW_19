@@ -1,15 +1,16 @@
 // javascript for preloader animation
 
+var firstTime = 1;
+
 function fade() {
     $('.preloader').fadeOut("slow");
+    firstTime = 0;
+    return firstTime;
 }
 
-firstTime = true;
-
-if (firstTime === true) {
+if (firstTime === 1) {
     console.log("Hello");
     setTimeout(fade, 3000);
-    firstTime = false;
 } else {
     document.getElementById('.preloader').style.visibility = 'hidden';
     console.log("Hi");
