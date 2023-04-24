@@ -1,11 +1,10 @@
 // javascript for preloader animation
 
-var firstTime = 1;
+let firstTime = 1;
 
 function fade() {
     $('.preloader').fadeOut("slow");
     firstTime = 0;
-    return firstTime;
 }
 
 if (firstTime === 1) {
