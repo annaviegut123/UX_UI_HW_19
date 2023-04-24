@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <!-- UI/UX Bootcamp Portfolio Project 2023 (Anna Viegut) -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anna's Portfolio</title>
+
+        <!-- css style sheet -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- fonts (crimson text and roboto) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- header hero section -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1>Hi there, I’m</h1><h1 class="green-anna">Anna</h1><h1> and this is my portfolio.</h1>
+                <p class="hero-paragraph">My vocation is to help make a more beautiful world
+                     by creating delightful designs and experiences. My goal is to play my part to remove web and mobile user frustration so that we can all use our devices to flourish.</p>
+            </div>
+
+            <!-- navigation menu -->
+            <!-- inspired by and modified from ljc-dev original 'Easy hamburger menu with JS - Beginners' code https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+            <button class="hamburger">
+                <img src="images\menu-icon-image.png" class="menuIcon">
+                <img src="images\close-icon.png" class="closeIcon">
+            </button>
+            <div class="menu">
+            <ul>
+                <li class="menuItem first"><a href="index.html">HOME</a></li>
+                <li class="menuItem second"><a href="about.html">ABOUT</a></li>
+                <li class="menuItem third"><a href="#work">WORK</a></li>
+                <li class="menuItem fourth"><a href="https://drive.google.com/file/d/18dxcBKrbKlt9mGfkNx0uI7D8Q0Klu5jQ/view?usp=share_link" target="_blank">RESUME</a></li>
+                <li class="menuItem fifth"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="social-icons-nav">
+                <a class="menuItemIcon" href="mailto: Anna.Viegut@gmail.com"><img src="images\email-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="images\linkedin-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://dribbble.com/Anna-UI" target="_blank"><img src="images\dribbble-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.behance.net/Anna-UI" target="_blank"><img src="images\behance-icon.png" class="social-icon-nav"></a>
+            </div>
+            </div>
+
+            <!-- javascript for navigation menu -->
+            <script>
+
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger= document.querySelector(".hamburger");
+            const closeIcon= document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.visibility = "visible";
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach( 
+                function(menuItem) { 
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+            </script>
+         </header>
+
+         <!-- case studies section -->
+        <section class="case-studies" id="work">
+
+            <!-- virginia's judicial system website redesign case study preview -->
+            <div class="virginia">
+                <div class="virginia-text">
+                    <h2>Virginia's Judicial System</h2>
+                    <p class="case-study-paragraph">A redesigned website information architecture including new header and footer navigation, UI with new colors and imagery, and improved usability that allows a user to find information quickly and efficiently.</p>
+                    <a href=""><div class="button">VIEW CASE STUDY</div></a>
+                </div>
+                <img src="images\virginias-judicial-system-image.png" class="case-study-image">
+            </div>
+
+            <!-- addventure travel planning app case study preview -->
+            <div class="addventure">
+                <div class="addventure-text">
+                    <h2>AddVenture</h2>
+                    <p class="case-study-paragraph">AddVenture is a social travel planning app that helps people share, save, rate, review, and budget vacations for easy and accurate planning.</p>
+                    <a href="addventure.html"><div class="button">VIEW CASE STUDY</div></a>
+                </div>
+                <img src="images\addventure-image.png" class="case-study-image-two">
+            </div>
+
+            <!-- twin cities recovery project website redesign case study preview -->
+            <div class="twincities">
+                <div class="twincities-text">
+                    <h2>Twin Cities Recovery Project</h2>
+                    <p class="case-study-paragraph">A redesigned website with intuitive navigation, straightforward information, and inviting, user-centered design.</p>
+                    <a href=""><div class="button">VIEW CASE STUDY</div></a>_
+                </div>
+                <img src="images\twincities-image.png" class="case-study-image">
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer id="contact">
+            <a href="about.html"><img src="images\profile-image.png" class="profile-image"></a>
+            <div class="footer-text">
+                <h3 class="footer-text-element">ANNA VIEGUT</h3>
+                <p class="footer-text-element">I’m creating a more beautiful world starting with the corner I’m called to cultivate: UI/UX.</p>
+                <p class="footer-text-element">763-406-9846</p>
+                <p class="footer-text-element">Anna.Viegut@gmail.com</p>
+            </div>
+            <div class="social-icons">
+                <a href="mailto: Anna.Viegut@gmail.com"><img src="images\email-icon.png" class="social-icon-footer"></a>
+                <a href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="images\linkedin-icon.png" class="social-icon-footer"></a>
+                <a href="https://dribbble.com/Anna-UI" target="_blank"><img src="images\dribbble-icon.png" class="social-icon-footer"></a>
+                <a href="https://www.behance.net/Anna-UI" target="_blank"><img src="images\behance-icon.png" class="social-icon-footer"></a>
+            </div>
+        </footer>
+    </body>
+</html>
