@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- about page -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+
+        <!-- css style sheet -->
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+
+        <!-- fonts (crimson text and roboto) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- header section -->
+        <header class="about-header">
+            <h2 class="about-header-heading">About</h2>
+            <p class="about-header-subheading">Learn More About Me</p>
+
+            <!-- navigation menu -->
+            <!-- inspired by and modified from ljc-dev original 'Easy hamburger menu with JS - Beginners' code https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+            <button class="hamburger">
+                <img src="Images\menu-icon-image.png" class="menuIcon">
+                <img src="Images\close-icon.png" class="closeIcon">
+            </button>
+            <div class="menu">
+            <ul>
+                <li class="menuItem first"><a href="index.html">HOME</a></li>
+                <li class="menuItem second"><a href="about.html">ABOUT</a></li>
+                <li class="menuItem third"><a href="#work">WORK</a></li>
+                <li class="menuItem fourth"><a href="https://drive.google.com/file/d/18dxcBKrbKlt9mGfkNx0uI7D8Q0Klu5jQ/view?usp=share_link" target="_blank">RESUME</a></li>
+                <li class="menuItem fifth"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="social-icons-nav">
+                <a class="menuItemIcon" href="mailto: Anna.Viegut@gmail.com"><img src="Images\email-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="Images\linkedin-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://dribbble.com/Anna-UI" target="_blank"><img src="Images\dribbble-icon.png" class="social-icon-nav"></a>
+                <a class="menuItemIcon" href="https://www.behance.net/Anna-UI" target="_blank"><img src="Images\behance-icon.png" class="social-icon-nav"></a>
+            </div>
+            </div>
+
+            <!-- javascript for navigation menu -->
+            <script>
+
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger= document.querySelector(".hamburger");
+            const closeIcon= document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.visibility = "visible";
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach( 
+                function(menuItem) { 
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+            </script>
+         </header>
+
+    <!-- hero section -->
+    <section class="about-hero">
+        <div class="column">
+        <h2 class="about-green-anna">Anna</h2><h2 class="about-hero-heading">Viegut</h2>
+        <p class="about-hero-paragraph">I am currently working for Torque Fitness as a web maintenance specialist, graphic designer, and product artist. When I’m not at work I enjoy reading, painting, playing guitar, being outdoors, traveling, and hosting friends.</p>
+        </div>
+        <div class="column">
+        <img src="Images\about-me-image-1.png" class="about-me-image-1">
+        </div>
+    </section>
+
+    <!-- skills and tools section -->
+    <section class="skills-tools">
+        <div class="skills">
+        <h3 class="skills-heading">SKILLS</h3>
+        <ul>
+            <li>Web Design & Development</li>
+            <li>Web Maintenance</li>
+            <li>UI/UX</li>
+            <li>Product Design</li>
+            <li>Graphic Design</li>
+            <li>Photo & Video Editing</li>
+            <li>Email & SMS Marketing</li>
+            <li>Copywriting</li>
+            <li>Project Management</li>
+        </ul>
+        </div>
+        <img src="Images\about-me-image-2.png" class="about-me-image-2">
+        <img src="Images\about-me-image-3.png" class="about-me-image-3">
+        <img src="Images\about-me-image-4.png" class="about-me-image-4">
+        <img src="Images\about-me-image-5.png" class="about-me-image-5">
+        <div class="tools">
+        <h3 class="tools-heading">TOOLS</h3>
+        <ul>
+            <li>Adobe Suite</li>
+            <li>Microsoft Suite</li>
+            <li>HTML, CSS, JavaScript, PHP, C#</li>
+            <li>SquareSpace, Webflow</li>
+            <li>Wordpress, WooCommerce, Elementor</li>
+            <li>Shopify, Shogun, Wix, Weebly</li>
+            <li>Figma, Framer, Sketch, InVision, Miro</li>
+            <li>Klaviyo, Beefree, Algolia, Hotjar, Typeform</li>
+            <li>Asana, Notion, Basecamp</li>
+        </ul>
+        </div>
+    </section>
+
+  <!-- footer section -->
+  <footer id="contact">
+    <a href="about.html"><img src="Images\profile-image.png" class="profile-image"></a>
+    <div class="footer-text">
+        <h3 class="footer-text-element">ANNA VIEGUT</h3>
+        <p class="footer-text-element">I’m creating a more beautiful world starting with the corner I’m called to cultivate: UI/UX.</p>
+        <p class="footer-text-element">763-406-9846</p>
+        <p class="footer-text-element">Anna.Viegut@gmail.com</p>
+    </div>
+    <div class="social-icons">
+        <a href="mailto: Anna.Viegut@gmail.com"><img src="Images\email-icon.png" class="social-icon-footer"></a>
+        <a href="https://www.linkedin.com/in/anna-viegut-3b64971b5/" target="_blank"><img src="Images\linkedin-icon.png" class="social-icon-footer"></a>
+        <a href="https://dribbble.com/Anna-UI" target="_blank"><img src="Images\dribbble-icon.png" class="social-icon-footer"></a>
+        <a href="https://www.behance.net/Anna-UI" target="_blank"><img src="Images\behance-icon.png" class="social-icon-footer"></a>
+    </div>
+</footer>
+</body>
+</html>
