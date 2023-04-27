@@ -116,6 +116,11 @@ html {
     padding-left: 0.875vw;
 }
 
+.menuItem a:hover {
+    color: #644125;
+    font-size: 2.6vw;
+}
+
 .showMenu {
     transform: translateX(0);
 }
@@ -842,6 +847,11 @@ footer {
     padding-bottom: 1.8vw;
     padding-top: 8vw;
     padding-left: 5vw;
+}
+
+.menuItem a:hover {
+    color: #644125;
+    font-size: 7.6vw;
 }
 
 .social-icons-nav {
