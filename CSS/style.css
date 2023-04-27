@@ -787,6 +787,17 @@ footer {
     display: flex;
 }
 
+.addventure-interactive-prototype {
+    width: 100%;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 110vh;
+    transform: scale(0.8);
+}
+
 /* media queries */
 /* extra small devices (phones, 600px and down) */
 
