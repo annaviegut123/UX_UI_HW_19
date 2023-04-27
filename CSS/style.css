@@ -235,6 +235,15 @@ li {
     text-align: center;
     margin-right: 4vw;
     margin-top: 1vh;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.case-study-image:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .case-study-image-two {
@@ -244,6 +253,21 @@ li {
     padding-left: 3%;
     text-align: center;
     margin-right: 4vw;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.case-study-image-two:hover {
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    padding-left: 3%;
+    text-align: center;
+    margin-right: 4vw;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .button {
