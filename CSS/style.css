@@ -363,6 +363,15 @@ footer {
     padding-top: 5%;
     position: absolute;
     z-index: 2;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.about-me-image-2:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .about-me-image-3 {
@@ -372,6 +381,15 @@ footer {
     position: relative;
     padding-left: 50%;
     z-index: 1;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.about-me-image-3:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .about-me-image-4 {
@@ -382,6 +400,15 @@ footer {
     padding-left: 30%;
     z-index: 2;
     margin-top: -10%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.about-me-image-4:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .about-me-image-5 {
@@ -393,6 +420,15 @@ footer {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     margin-top: -10%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.about-me-image-5:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .skills-tools {
