@@ -307,6 +307,15 @@ footer {
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.profile-image:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .footer-text {
