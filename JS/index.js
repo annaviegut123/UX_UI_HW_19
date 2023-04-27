@@ -9,7 +9,7 @@ function fade() {
 
 if (firstTime === 1) {
     console.log("Hello");
-    setTimeout(fade, 3000);
+    setTimeout(fade, 2500);
 } else {
     document.getElementById('.preloader').style.visibility = 'hidden';
     console.log("Hi");
