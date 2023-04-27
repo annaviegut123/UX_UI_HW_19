@@ -786,6 +786,10 @@ footer {
     display: flex;
 }
 
+.addventure-interactive-prototype {
+    background-color: white;
+}
+
 iframe {
     border: none;
     width: 100%;
