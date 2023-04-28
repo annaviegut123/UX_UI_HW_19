@@ -5,3 +5,4 @@ function fade() {
 }
 
 setTimeout(fade, 2500);
+
