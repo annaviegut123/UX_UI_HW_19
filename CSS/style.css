@@ -593,11 +593,19 @@ footer {
     padding-bottom: 5%;
 }
 
+.addventure-main-heading-text-first {
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 3.5vw;
+    padding-left: 10%;
+}
+
 .addventure-main-heading-text {
     color: black;
     font-family: 'Crimson Text', serif;
     font-size: 3.5vw;
     padding-left: 10%;
+    padding-top: 5%;
 }
 
 .addventure-main-subheading-text {
